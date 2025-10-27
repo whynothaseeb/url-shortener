@@ -58,16 +58,6 @@ pipeline {
             }
         }
 
-        stage('Optional: Push Docker Images') {
-            when {
-                expression { return false } // Change to true if pushing to Docker Hub
-            }
-            steps {
-                // Example:
-                // sh "docker tag ${DOCKER_IMAGE_BACKEND} yourhubuser/${DOCKER_IMAGE_BACKEND}:latest"
-                // sh "docker push yourhubuser/${DOCKER_IMAGE_BACKEND}:latest"
-            }
-        }
 
         stage('Success') {
             steps {
