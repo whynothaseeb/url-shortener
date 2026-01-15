@@ -15,7 +15,7 @@ The project follows a **modular, service-oriented architecture** consisting of t
 - Built with **Vite** for fast development and optimized builds.
 - Implements a clean, responsive UI styled with TailwindCSS.
 - Communicates with the backend via REST API endpoints.
-- Includes a collapsible sidebar for recent links (like ChatGPT’s layout).
+- Includes a collapsible sidebar for recent links.
 
 #### 2. **Backend (Node.js + Express + SQLite)**
 
@@ -105,7 +105,7 @@ The Jenkins pipeline automates:
 2. Start the containers:
 
    ```bash
-   docker-compose up --build
+   docker compose up --build
    ```
 
 3. Visit:
